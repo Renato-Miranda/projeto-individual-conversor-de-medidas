@@ -35,7 +35,7 @@ h1 {
 
 section {
     display: flex;
-    justify-content:center
+    justify-content:center;
     
     
 }
@@ -45,12 +45,16 @@ form{
     gap: 50px;
     background-color:rgba(57, 69, 172, 1); 
     width: 50%;
+    height: 500px;
     border-radius: 25px;
     align-items: center;
     
     
+    
 }
 
-.div-dos-imputs {
-    margin-left: 50%;
+.div-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
 }
