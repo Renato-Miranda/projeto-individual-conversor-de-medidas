@@ -3,6 +3,9 @@
 :root {
     --font-titulo: "Lato", sans-serif;
     --font-texto: "Roboto", sans-serif;
+    --cor-background: rgb(2, 0, 36);
+    --cor-backgrounf-gradient: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(159, 192, 223, 1) 53%, rgba(0, 212, 255, 1) 93%);
+
 }
 
 * {
@@ -10,4 +13,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-texto);
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(159, 192, 223, 1) 53%, rgba(0, 212, 255, 1) 93%);
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(57, 69, 172, 1);
+    height: 100px;
+}
+
+h1 {
+    margin-top: 30px;
 }
