@@ -57,10 +57,17 @@ form{
 .div-inputs {
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    gap: 50px;
+    padding-top: 20px;
 }
 
 footer {
     display: flex;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.45);
+    gap:10px;
+}
+
+h2 {
+    margin-top: 12px;
 }
