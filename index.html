@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Unidades </title>
 </head>
+
 <body>
-    <header>
-        <h1>CONVERSOR DE MEDIDAS</h1>
-    </header>
+    <main>
+        <header>
+            <h1>CONVERSOR DE MEDIDAS</h1>
+        </header>
+        <section>
+            <form>
+                <div id="div-valor">
+                    <label for="valor">Valor:</label>
+                    <input type="number" id="valor" required>
+                </div>
+                <div id="div-categoria">
+                    <label for="categoria">Categoria:</label>
+                    <select id="categoria">
+                        <option value="escolha">Selecione uma medida</option>
+                        <option value="comprimento">Comprimento</option>
+                        <option value="peso">Peso</option>
+                        <option value="temperatura">Temperatura</option>
+                    </select>
+                </div>
+                <div id="div-unidade-origem">
+                    <label for="unidadeOrigem">Unidade de Origem:</label>
+                    <select id="unidadeOrigem"></select>
+                </div>
+                <div id="div-unidade-destino">
+                    <label for="unidadeDestino">Unidade de Destino:</label>
+                    <select id="unidadeDestino"></select>
+                </div>
+                <div id="btn-converter">
+                    <button type="button" class="converter-btn">Converter</button>
+                </div>
+                <div class="resultado" id="resultado">
+                    <label for="resultado">Resultado:</label>
+                    <input type="number" id="area-resultado">
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>
