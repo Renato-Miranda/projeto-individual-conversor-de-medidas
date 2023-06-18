@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Press+Start+2P&family=Roboto&display=swap");
+
+:root {
+    --font-titulo: "Lato", sans-serif;
+    --font-texto: "Roboto", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
