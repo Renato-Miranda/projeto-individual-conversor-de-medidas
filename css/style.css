@@ -47,7 +47,7 @@ form{
     display: flex;
     flex-direction: column;
     gap: 50px;
-    background-color:rgba(57, 69, 172, 1); 
+    background-color:rgba(57, 68, 172, 0.822); 
     width: 50%;
     height: 600px;
     border-radius: 25px;
