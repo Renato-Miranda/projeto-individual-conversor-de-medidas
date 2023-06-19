@@ -61,6 +61,42 @@ fieldset {
     padding-top: 20px;
 }
 
+#div-valor{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#div-valor > label {
+    display: flex;
+    justify-content: space-around;
+}
+
+#div-categoria{
+    display: flex;
+    flex-direction: column;
+}
+
+#div-categoria > label {
+    display: flex;
+    justify-content: space-around;
+}
+
+#btn-converter{
+    display: flex;
+    justify-content: space-around;
+}
+
+#resultado{
+    display: flex;
+    flex-direction: column;
+}
+
+#resultado > label {
+    display: flex;
+    justify-content: space-around;
+}
+
 footer {
     display: flex;
     justify-content: center;
