@@ -2,6 +2,8 @@
     var categoriaSelect = document.getElementById('categoria');
     var unidadeOrigemSelect = document.getElementById('unidadeOrigem');
     var unidadeDestinoSelect = document.getElementById('unidadeDestino');
+    var escolhaSelect = document.getElementById('escolha');
+
     
     categoriaSelect.addEventListener('change', function() {
       var categoria = categoriaSelect.value;
@@ -12,6 +14,8 @@
         populateOptions(['Quilogramas (kg)', 'Gramas (g)', 'Libras (lb)']);
       } else if (categoria === 'temperatura') {
         populateOptions(['Celsius (°C)', 'Fahrenheit (°F)', 'kelvin (°K)']);
+      }else if (categoria === 'escolha') {
+        populateOptions(['Selecione uma categoria'])
       }
     });
     
