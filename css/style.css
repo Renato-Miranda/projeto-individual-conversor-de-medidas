@@ -80,6 +80,9 @@ fieldset {
     justify-content: space-around;
     font-size: 20px;
 }
+textarea {
+    resize: none;
+}
 
 #div-categoria{
     display: flex;
@@ -176,7 +179,7 @@ h2 {
     header{
     top:auto;  
     }
-    
+
     h1 {
         font-size: 30px;
     }
