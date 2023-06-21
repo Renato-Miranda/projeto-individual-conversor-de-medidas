@@ -173,6 +173,10 @@ h2 {
 
 
 @media screen and (max-width: 1200px){
+    header{
+    top:auto;  
+    }
+    
     h1 {
         font-size: 30px;
     }
