@@ -49,17 +49,20 @@ form{
     display: flex;
     flex-direction: column;
     gap: 50px;
-    background-color:rgba(57, 68, 172, 0.822); 
-    /* background-color: rgba(13, 65, 128, 0.205); */
     width: 50%;
     height: 600px;
     border-radius: 25px;
     align-items: center;
     border-style: groove;
-    filter: drop-shadow(10px 10px 18px #000);
+    filter: drop-shadow(10px 10px 18px #000000a6);
+    background-color:rgba(255, 255, 255, 0.027);
+    backdrop-filter: blur(4px) brightness(0.8);
+    
 }
 fieldset {
     border: none;
+    
+    
 }
 
 .div-inputs {
@@ -161,6 +164,9 @@ textarea {
     display: flex;
     justify-content: space-around;
     font-size: 20px;
+}
+#area-resultado{
+    height: 35px;
 }
 
 footer {
