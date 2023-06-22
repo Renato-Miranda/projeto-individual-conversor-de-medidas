@@ -32,3 +32,8 @@
         unidadeDestinoSelect.appendChild(optionElement.cloneNode(true));
       });
     }
+
+
+    var converterBtn = document.querySelector('.converter-btn');
+
+    
