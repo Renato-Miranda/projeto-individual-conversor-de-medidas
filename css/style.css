@@ -27,8 +27,8 @@ header {
     background-color: rgba(57, 69, 172, 1);
     height: 100px;
     margin-bottom: 300px;
-    position: sticky;   
-    top: 0; 
+    /* position: sticky;   
+    top: 0;  */
 }
 
 h1 {
