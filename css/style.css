@@ -135,12 +135,12 @@ textarea:focus {
     font-size: 20px;
 }
 
-#div-unidade-destino {
+#unidades-destino {
     display: flex;
     flex-direction: column;
 }
 
-#div-unidade-destino>label {
+#unidades-destino>label {
     display: flex;
     justify-content: space-around;
     font-size: 20px;
