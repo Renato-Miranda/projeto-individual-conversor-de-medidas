@@ -124,12 +124,12 @@ textarea:focus {
     text-align: center;
 }
 
-#div-unidade-origem {
+#unidades-origens {
     display: flex;
     flex-direction: column;
 }
 
-#div-unidade-origem>label {
+#unidades-origens>label {
     display: flex;
     justify-content: space-around;
     font-size: 20px;
