@@ -105,12 +105,12 @@ textarea:focus {
 }
 
 
-#div-categoria {
+#categorias {
     display: flex;
     flex-direction: column;
 }
 
-#div-categoria>label {
+#categorias>label {
     display: flex;
     justify-content: space-around;
     font-size: 20px;
