@@ -74,13 +74,13 @@ fieldset {
     padding-top: 20px;
 }
 
-#div-valor {
+#valores {
     display: flex;
     flex-direction: column;
 
 }
 
-#div-valor>label {
+#valores>label {
     display: flex;
     justify-content: space-around;
     font-size: 20px;
