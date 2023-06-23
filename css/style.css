@@ -67,7 +67,7 @@ fieldset {
 
 }
 
-.div-inputs {
+.inputs {
     display: flex;
     flex-direction: column;
     gap: 50px;
