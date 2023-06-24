@@ -37,7 +37,7 @@
     // Seletor do botão de converter
 var converterBtn = document.querySelector('.converter-btn');
 
-// Adicionar ouvinte de evento ao botão
+/// Adicionar ouvinte de evento ao botão
 converterBtn.addEventListener('click', function() {
   // Obter os valores digitados e selecionados
   var valor = document.getElementById('valor').value;
@@ -45,11 +45,23 @@ converterBtn.addEventListener('click', function() {
   var unidadeOrigem = unidadeOrigemSelect.value;
   var unidadeDestino = unidadeDestinoSelect.value;
   
-  // Realizar a conversão
-  var resultado = realizarConversao(valor, categoria, unidadeOrigem, unidadeDestino);
-  
-  // Exibir o resultado na caixa de texto
-  document.getElementById('area-resultado').value = resultado;
+  // Verificar se o campo "valor" está vazio
+  if (valor === '') {
+    // Exibir mensagem de erro
+    alert( document.getElementById('area-resultado').value = 'Por favor, insira um valor.');
+  } else {
+    // Verificar se algum dos outros campos está vazio
+    if (categoria === '' || unidadeOrigem === '' || unidadeDestino === '') {
+      // Exibir mensagem de erro
+      alert(document.getElementById('area-resultado').value = 'Por favor, preencha todos os campos.');
+    } else {
+      // Realizar a conversão
+      var resultado = realizarConversao(valor, categoria, unidadeOrigem, unidadeDestino);
+      
+      // Exibir o resultado na caixa de texto
+      document.getElementById('area-resultado').value = resultado;
+    }
+  }
 });
 
 // Adicionar ouvinte de evento para a tecla Enter pressionada em qualquer lugar selecionado da tela
