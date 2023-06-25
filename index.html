@@ -8,20 +8,26 @@
     <link rel="stylesheet" href="css/input.css">
     <title>Conversor de Unidades </title>
 </head>
-
+<!-- Corpo -->
 <body>
+    <!-- Principal -->
     <main>
+        <!-- Headr -->
         <header>
             <h1>CONVERSOR DE MEDIDAS</h1>
         </header>
+        <!-- Sessão -->
         <section>
+            <!-- Formulário -->
             <form>
                 <fieldset>
+                    <!-- Campo dos valore -->
                     <div class="inputs">
                         <div id="valores">
                             <label for="valor">Valor:</label>
                             <textarea id="valor" placeholder="Digite um Valor:" required></textarea>
                         </div>
+                        <!-- Campo categorias -->
                         <div id="categorias">
                             <label for="categoria">Categoria:</label>
                             <select id="categoria">
@@ -31,17 +37,21 @@
                                 <option value="temperatura">Temperatura</option>
                             </select>
                         </div>
+                        <!-- Campo unidade Origem -->
                         <div id="unidades-origens">
                             <label for="unidadeOrigem">Unidade de Origem:</label>
                             <select id="unidadeOrigem"></select>
                         </div>
+                        <!-- Destino -->
                         <div id="unidades-destino">
                             <label for="unidadeDestino">Unidade de Destino:</label>
                             <select id="unidadeDestino"></select>
                         </div>
+                        <!-- Botão Converter -->
                         <div id="btn-converter">
                             <button type="button" class="converter-btn">Converter</button>
                         </div>
+                        <!-- Resultado -->
                         <div class="resultado" id="resultado">
                             <label for="resultado">Resultado:</label>
                             <input type="number" id="area-resultado">
@@ -50,6 +60,7 @@
                 </fieldset>
             </form>
         </section>
+        <!-- Rodapé -->
         <footer>
             <div class="icone">
                 <a><img src="imagens/Copyright.svg" alt="Icone de Copyright"></a>
