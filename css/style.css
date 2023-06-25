@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Press+Start+2P&family=Roboto&display=swap");
 
+/* Variaveis de cor e fonte */
 :root {
     --font-titulo: "Lato", sans-serif;
     --font-texto: "Roboto", sans-serif;
@@ -8,6 +9,7 @@
 
 }
 
+/* RESET CSS */
 * {
     margin: 0;
     padding: 0;
@@ -15,12 +17,14 @@
     font-family: var(--font-texto);
 }
 
+/* COR BACKGROUND GERAL */
 body {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(159, 192, 223, 1) 53%, rgba(0, 212, 255, 1) 93%);
     color: #ffffff;
 }
 
+/* ESTILOS DO CABEÇALHO */
 header {
     display: flex;
     justify-content: center;
@@ -31,6 +35,7 @@ header {
     top: 0;  */
 }
 
+/* ESTILOS DO TITULO DA PAGINA DO HEADER */
 h1 {
     margin-top: 30px;
     font-family: var(--font-titulo);
@@ -38,6 +43,7 @@ h1 {
     color: rgb(221, 220, 220);
 }
 
+/* CONFIGURAÇÃO DE ESTILOS DA SECTION */
 section {
     display: flex;
     justify-content: center;
@@ -46,6 +52,7 @@ section {
 
 }
 
+/* --------------------------------------FORMULÁRIO----------------------- */
 form {
     display: flex;
     flex-direction: column;
@@ -61,12 +68,14 @@ form {
 
 }
 
+/* DESATIVANDO ESTILO FILDSET */
 fieldset {
     border: none;
 
 
 }
 
+/* ESTILO DE INPUTS NO GERAL */
 .inputs {
     display: flex;
     flex-direction: column;
@@ -74,18 +83,21 @@ fieldset {
     padding-top: 20px;
 }
 
+/* CAMPO VALORES DO FORMULÁRIO */
 #valores {
     display: flex;
     flex-direction: column;
 
 }
 
+/* ESTILO LABEL DE VALORES */
 #valores>label {
     display: flex;
     justify-content: space-around;
     font-size: 20px;
 }
 
+/* ESTILO DA TEXT AREA DO CAMPO VALOR */
 textarea {
     height: 35px;
     resize: none;
@@ -104,18 +116,20 @@ textarea:focus {
     outline: none;
 }
 
-
+/* --------------------------ESTILO CATEGORIAS------------------------------------ */
 #categorias {
     display: flex;
     flex-direction: column;
 }
 
+/* ESTILO LABEL CATEGORIAS */
 #categorias>label {
     display: flex;
     justify-content: space-around;
     font-size: 20px;
 }
 
+/* ---------------------------ESTILOS DOS SELETORES ------------------------ */
 #unidadeOrigem,
 #unidadeDestino,
 #categoria {
@@ -146,6 +160,7 @@ textarea:focus {
     font-size: 20px;
 }
 
+/* ----------------------------------ESTILOS DO BOTÃO--------------------------------- */
 
 #btn-converter {
     display: flex;
@@ -182,6 +197,7 @@ textarea:focus {
     text-decoration: none;
 }
 
+/* --------------------------------------ESTILOS DO CAMPO RESULTADO-------------------------------- */
 #resultado {
     display: flex;
     flex-direction: column;
@@ -206,7 +222,7 @@ textarea:focus {
     box-shadow: inset 0px 0px 5px 0px rgba(42, 42, 42, .32);
 }
 
-
+/* -----------------------------------RODAPÉ----------------------------------- */
 
 footer {
     display: flex;
@@ -219,6 +235,7 @@ h2 {
     margin-top: 12px;
 }
 
+/* -----------------------RESPONSIVIDADE PARA TELAS MENORES ------------------------------ */
 
 @media screen and (max-width: 1200px) {
     header {
