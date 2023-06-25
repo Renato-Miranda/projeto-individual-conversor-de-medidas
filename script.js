@@ -1,29 +1,30 @@
 
+    // Seleciona os objetos no documento html
     var categoriaSelect = document.getElementById('categoria');
     var unidadeOrigemSelect = document.getElementById('unidadeOrigem');
     var unidadeDestinoSelect = document.getElementById('unidadeDestino');
     var escolhaSelect = document.getElementById('escolha');
 
-    
+    // Evento de escuta click e função de mudança de seletor
     categoriaSelect.addEventListener('change', function() {
       var categoria = categoriaSelect.value;
       
       if (categoria === 'comprimento') {
-        populateOptions(['Metro (m)', 'Centímetros (cm)', 'Polegadas (in)']);
+        mudarSeletor(['Metro (m)', 'Centímetros (cm)', 'Polegadas (in)']);
       } else if (categoria === 'peso') {
-        populateOptions(['Quilogramas (kg)', 'Gramas (g)', 'Libras (lb)']);
+        mudarSeletor(['Quilogramas (kg)', 'Gramas (g)', 'Libras (lb)']);
       } else if (categoria === 'temperatura') {
-        populateOptions(['Celsius (°C)', 'Fahrenheit (°F)', 'Kelvin (°K)']);
+        mudarSeletor(['Celsius (°C)', 'Fahrenheit (°F)', 'Kelvin (°K)']);
       }else if (categoria === 'escolha') {
-        populateOptions(['Selecione uma categoria'])
+        mudarSeletor(['Selecione uma categoria'])
       }
     });
-    
-    function populateOptions(options) {
+    // funçao para prencher as mudaças de seletor
+    function mudarSeletor(opcoes) {
       unidadeOrigemSelect.innerHTML = '';
       unidadeDestinoSelect.innerHTML = '';
       
-      options.forEach(function(option) {
+      opcoes.forEach(function(option) {
         var optionElement = document.createElement('option');
         optionElement.value = option;
         optionElement.textContent = option;
@@ -45,7 +46,7 @@ converterBtn.addEventListener('click', function() {
   var unidadeOrigem = unidadeOrigemSelect.value;
   var unidadeDestino = unidadeDestinoSelect.value;
   
-  // Verificar se o campo "valor" está vazio
+  // Verificar se o campo valor está vazio
   if (valor === '') {
     // Exibir mensagem de erro
     alert( document.getElementById('area-resultado').value = 'Por favor, insira um valor.');
