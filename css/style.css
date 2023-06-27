@@ -30,7 +30,7 @@ header {
     justify-content: center;
     background-color: rgba(57, 69, 172, 1);
     height: 100px;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
     /* position: sticky;   
     top: 0;  */
 }
@@ -47,7 +47,7 @@ h1 {
 section {
     display: flex;
     justify-content: center;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
 
 
 }
@@ -240,10 +240,15 @@ h2 {
 @media screen and (max-width: 1200px) {
     header {
         top: auto;
+        margin-bottom: 50px;
     }
 
     h1 {
         font-size: 30px;
+    }
+
+    section {
+        margin-bottom: 50px;
     }
 
     h2 {
